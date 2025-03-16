@@ -9,7 +9,7 @@ app.get("", (req, res) => {
 app.get("/about", (req, res) => {
   res.send(`
     <a href ="/">Home Page </a> <br><br><br><br>
-    <input type = "text" placeholder = "username"/>
+    <input type = "text" placeholder = "username" value = "${req.query.name}"/>
     <button> Click Me </button>
     `);
 });
